@@ -21,11 +21,11 @@ Front-end development focuses on creating the visual and interactive elements of
 
 ## Task Overview
 
-Building a personal portfolio website is one of the most simple yet tough front-end project ideas. You might begin by using your website as a resume. This means you can add information to the website about your experience, talents, and expertise
+The architecture, which is divided into three buckets, will be used: CSS (Cascading Style Sheets (adding styling to each element defined in the HTML file) JavaScript is a programming language that allows you to (adding elements for audio, player buttons, and music information) (when HTML elements are clicked, functionality is added)
 
 ## The Project
 
-  #### [HTML Codes](HTML-Codes)      --     [CSS Codes](CSS_Codes)      --     [Java Code]() 
+  #### [HTML Codes](HTML-Codes)      --     [CSS Codes](CSS_Codes)      --     [Java Code](Java_Code) 
 
 ![WhatsApp Image 2024-08-29 at 23 50 12_33cc14f7](https://github.com/user-attachments/assets/33b78380-b8b4-4056-8d2d-e233013574ad)
 
