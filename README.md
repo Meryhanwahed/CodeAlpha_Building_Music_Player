@@ -25,9 +25,9 @@ Building a personal portfolio website is one of the most simple yet tough front-
 
 ## The Project
 
-  #### [HTML Codes](HTML-Codes)      --     [CSS Codes](CSS_Codes) 
+  #### [HTML Codes](HTML-Codes)      --     [CSS Codes](CSS_Codes)      --     [Java Code]() 
 
- ![WhatsApp Image 2024-08-29 at 23 33 30_025942a4](https://github.com/user-attachments/assets/35d94f67-c546-4a90-9a86-c0798a018051)
+![WhatsApp Image 2024-08-29 at 23 50 12_33cc14f7](https://github.com/user-attachments/assets/33b78380-b8b4-4056-8d2d-e233013574ad)
 
 
 
