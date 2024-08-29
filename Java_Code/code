@@ -1,0 +1,90 @@
+const audio = document.getElementById('audio');
+const playBtn = document.getElementById('play');
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+const progress = document.getElementById('progress');
+const title = document.getElementById('title');
+const artist = document.getElementById('artist');
+const cover = document.getElementById('cover');
+
+
+const songs = [
+    {
+        name: 'song1.mp3',
+        title: 'Aktar_Wahed',
+        artist: 'AMR DIAB',
+        cover: '../image/AMR1.jpeg'
+    },
+    {
+        name: 'song2.mp3',
+        title: 'Kan_Tayeb',
+        artist: 'AMR DIAB',
+        cover: '../image/AMR1.jpeg'
+
+    },
+    {
+        name: 'song3.mp3',
+        title: 'Sadakny_Khalas',
+        artist: 'AMR DIAB',
+        cover: '../image/AMR1.jpeg'
+
+    }
+];
+
+let songIndex = 0;
+
+function loadSong(song) {
+    title.innerText = song.title;
+    artist.innerText = song.artist;
+    audio.src = ../music/${song.name};
+}
+
+function playSong() {
+    audio.play();
+    playBtn.innerText = 'Pause';
+}
+
+function pauseSong() {
+    audio.pause();
+    playBtn.innerText = 'Play';
+}
+
+function prevSong() {
+    songIndex--;
+    if (songIndex < 0) {
+        songIndex = songs.length - 1;
+    }
+    loadSong(songs[songIndex]);
+    playSong();
+}
+
+function nextSong() {
+    songIndex++;
+    if (songIndex > songs.length - 1) {
+        songIndex = 0;
+    }
+    loadSong(songs[songIndex]);
+    playSong();
+}
+
+function updateProgress() {
+    const progressPercent = (audio.currentTime / audio.duration) * 100;
+    progress.style.width = ${progressPercent}%;
+}
+
+
+playBtn.addEventListener('click', () => {
+    const isPlaying = audio.paused ? false : true;
+    if (isPlaying) {
+        pauseSong();
+    } else {
+        playSong();
+    }
+});
+
+prevBtn.addEventListener('click', prevSong);
+nextBtn.addEventListener('click', nextSong);
+audio.addEventListener('timeupdate', updateProgress);
+
+
+loadSong(songs[songIndex]);
